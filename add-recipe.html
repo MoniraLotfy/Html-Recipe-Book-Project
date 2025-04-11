@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<Html>
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="Recipe Book">
+        <meta name="keyword" content="Recipe">
+        <meta name=author content="M_Lotfy">
+        <meta name="viewport" content="device-width,initial-scale=1.0">
+<title>Add a Recipe</title>
+    </head>
+    <body>
+        <!--navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="recipe-list.html">Recipe List</a></li>
+            </ul>
+        </nav>
+        <h1>Add a New Recipe</h1>
+        <!--Recipe Submission Form-->
+        <form action="index.html" method="post">
+           <lable for="name">Recipe Name:</lable> 
+           <input type="text" id="name" name="name"  placeholder="Insert recipe name" required/></br></br>
+           <lable for ="integredient"> Integredients: </lable>
+           <textarea id="integredient" name="integredient" placeholder="Enter Recipe integredients" cols="40" rows="5"  required></textarea></br></br>
+           <lable for ="instructions"> Intstructions:  </lable>
+           <textarea id="instructions" name="instructions" placeholder="Enter Recipe instructions" cols="40" rows="5"  required></textarea></br></br>
+           <lable for="image">Please Inserte Your Image URL:</lable>
+           <input type="file" id="image" name="image" required></br></br>
+           <lable for="catagory"> Recipe Catagory</lable>
+            <select id="catagory" name="catagory" required>
+                <option value="" >Select Catagory</option> 
+                <option value="All" >All</option> 
+                <option value="dessert">Desserts</option>
+                <option value="vagun">Vagan</option>
+                <option value="Quick Meals">Quick Meals</option>
+                <option value="Appetizers">Appetizers</option>
+            </select></br></br>
+            <button type="submit">Submit Recipe</button>
+        </form>
+        </body>
+        </Html>
